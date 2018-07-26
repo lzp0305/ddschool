@@ -1,0 +1,30 @@
+/* reset.css */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td,textarea{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 'Microsoft YaHei','SimSun',Tahoma,Geneva,sans-serif;color:#333; background:#fff}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+li {list-style-type:none;}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+a{color:#333;text-decoration:none}
+a:hover{color:#333;}
+a,a:active,a:focus,input{outline:none;}
+.clear:after,.cf:after{content:'.';display:block;height:0;visibility:hidden;clear:both}
+.clear,.cf{*zoom:1}
+.cleafix{height:0;clear:both;font-size:0;overflow:hidden}
+/* my通用css */
+.fl {float:left}
+.fr {float:right}
+.pos-r{position: relative;}
+/* 共用css */
+.tong{width: 1200px;margin: 0px auto;overflow: hidden;position: relative;}
+.tong2{width: 1200px;margin: 0px auto;position: relative;}
+.dh{-webkit-transition:all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;}
+.jd{width:100%;display:block;overflow: hidden;white-space: nowrap;-o-text-overflow: ellipsis;text-overflow: ellipsis;}
+.clear{clear:both;}
+.pos-r{position: relative;}
+.pos-a{position: absolute;}
+.ov{overflow: hidden;}

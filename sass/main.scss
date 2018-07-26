@@ -1,0 +1,234 @@
+$tran: all 0.3s;
+$red: #dc3023;
+$blue: #1e83d3;
+
+@function torem($px) {
+	@return $px * 1.6 / 100px * 1rem;
+}
+
+
+//************************************
+
+body {
+	background-color: #fff;
+}
+
+.header {
+	width: 100%;
+	height: torem(80px);
+	overflow: hidden;
+	background-color: $red;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.header_behind {
+	width: 100%;
+	height: torem(80px);
+}
+.choose_school {
+	width: torem(120px);
+	height: torem(70px);
+	margin: torem(5px);
+	font-size: torem(24px);
+	text-align: center;
+	line-height: torem(70px);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 0 torem(10px);
+	color: #fff;
+	float: left;
+	i {
+		margin-left: torem(3px);
+	}
+}
+.search_box {
+	width: calc(100% - 4rem);
+	height: torem(70px);
+	float: left;
+	position: relative;
+	.text_input {
+		width: 100%;
+		height: torem(70px);
+		display: block;
+		background-color: #fff;
+		border-radius: torem(10px);
+		margin: torem(5px);
+		border: 0;
+		outline: 0;
+		font-size: torem(24px);
+		line-height: torem(70px);
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0 torem(75px) 0 torem(15px);
+	}
+	.fa {
+		position: absolute;
+		display: block;
+		width: torem(40px);
+		height: torem(40px);
+		top: torem(20px);
+		right: torem(10px);
+		font-size: torem(36px);
+		color: $red;
+	}
+}
+
+.share {
+	width: torem(60px);
+	height: torem(70px);
+	margin: torem(5px);
+	font-size: torem(36px);
+	text-align: center;
+	line-height: torem(70px);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 0 torem(10px);
+	color: #fff;
+	float: left;
+	i {
+		margin-left: torem(3px);
+	}
+}
+
+
+
+
+.banner {
+	width: 100%;
+	height: torem(400px);
+	.banner_item {
+		display: block;
+		width: 100%;
+		height: torem(400px);
+		img {
+			display: block;
+			width: 100%;
+			height: torem(400px);
+		}
+	}
+	.swiper-pagination-bullet {
+		width: torem(30px);
+		height: torem(5px);
+		background-color: $red;
+		border-radius: torem(5px);
+	}
+}
+
+
+
+
+
+
+.clas {
+	width: 100%;
+	margin-top: torem(30px);
+	margin-bottom: torem(30px);
+	overflow: hidden;
+	li {
+		width: 25%;
+		float: left;
+		a {
+			display: block;
+			font-size: torem(24px);
+			line-height: torem(36px);
+			height: torem(126px);
+			text-align: center;
+			color: #323232;
+			span {
+				background-repeat: no-repeat;
+				background-position: center torem(15px);
+				background-size: torem(60px);
+				border-radius: 50%;
+				display: block;
+				width: torem(90px);
+				height: torem(90px);
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+
+
+.footer {
+	width: 100%;
+	height: torem(100px);
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	a {
+		display: block;
+		width: (1/3)*100%;
+		float: left;
+	}
+	.on {
+		.icon {
+			display: none;
+		}
+		.icon_on {
+			display: block;
+		}
+		.text {
+			color: $red;
+		}
+	}
+	.icon {
+		display: block;
+		width: torem(50px);
+		height: torem(50px);
+		margin: torem(10px) auto 0;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: torem(50px);
+	}
+	.icon_on {
+		display: none;
+		width: torem(50px);
+		height: torem(50px);
+		margin: torem(10px) auto 0;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: torem(50px);
+	}
+	.text {
+		display: block;
+		width: 100%;
+		font-size: torem(24px);
+		line-height: torem(36px);
+		text-align: center;
+		color: #838383;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//************************************

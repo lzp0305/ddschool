@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="鸣鹿科技 www.singdeer.com/">
+	<title>点点校园</title>
+	<link rel="stylesheet" href="css/minireset.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+	<link rel="stylesheet" href="css/mobileSelect.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/mobileSelect.js" type="text/javascript"></script>
+	<script src="js/swiper-4.2.0.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="choose_school">选择学校<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+		<script>
+			$.getJSON('data/school.json', function(schoolListJson) {
+				if (schoolListJson.code == 0) {
+					console.log('成功')
+					var schoolListJsonItem = schoolListJson.data
+					var dataArr = [];
+					for (var i = 0; i < schoolListJsonItem.length; i++) {
+						var schoolName = schoolListJsonItem[i].name;
+						dataArr[i] = schoolListJsonItem[i].name
+					}
+				} else {
+					console.log('json 返回错误')
+				}
+
+
+				var school_list = dataArr;
+				var mobileSelect1 = new MobileSelect({
+					trigger: '.choose_school',
+					title: '选择学校',
+					wheels: [
+								{data: school_list}
+							],
+					position:[0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+					transitionEnd:function(indexArr){
+					},
+					callback:function(indexArr){
+						console.log(indexArr)
+					}
+				});
+			});
+		</script>
+		<div class="search_box">
+			<form action="">
+				<input type="text" class="text_input">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</form>
+		</div>
+		<a href="" class="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+	</div>
+	<div class="header_behind"></div>
+
+
+
+	
+
+
+
+	<div class="banner swiper-container">
+		<div class="swiper-wrapper">
+			<a href="" class="swiper-slide banner_item">
+				<img src="upload/39ca07e158793b8a1515d454e567d73b.jpg" alt="">
+			</a>
+			<a href="" class="swiper-slide banner_item">
+				<img src="upload/0e78165e335c1307c79027a745eb3143.jpg" alt="">
+			</a>
+			<a href="" class="swiper-slide banner_item">
+				<img src="upload/22924e5a2b9db214c8344ad4a5d3ff3d.jpg" alt="">
+			</a>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<script>
+		var bannerSwiper = new Swiper('.banner', {
+			autoplay: true,
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			loop: true,
+		})
+	</script>
+
+
+	<ul class="clas">
+		<li>
+			<a href="">
+				<span style="background-image: url(images/icon1.png);background-color: #fd9d21;"></span>
+				零食小吃
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<span style="background-image: url(images/icon2.png); background-color: #ff6767;"></span>
+				饮料蛋糕
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<span style="background-image: url(images/icon3.png); background-color: #4dc6ee"></span>
+				新鲜水果
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<span style="background-image: url(images/icon4.png); background-color: #fed030"></span>
+				美食外卖
+			</a>
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="footer">
+		<a href="" class="on">
+			<span class="icon" style="background-image: url(images/footer_icon1.png);"></span>
+			<span class="icon_on" style="background-image: url(images/footer_icon1_on.png);"></span>
+			<span class="text">首页</span>
+		</a>
+		<a href="">
+			<span class="icon" style="background-image: url(images/footer_icon2.png);"></span>
+			<span class="icon_on" style="background-image: url(images/footer_icon2_on.png);"></span>
+			<span class="text">购物车</span>
+		</a>
+		<a href="">
+			<span class="icon" style="background-image: url(images/footer_icon3.png);"></span>
+			<span class="icon_on" style="background-image: url(images/footer_icon3_on.png);"></span>
+			<span class="text">我的</span>
+		</a>
+	</div>
+
+
+
+	<script src="js/main.js"></script>
+</body>
+</html>

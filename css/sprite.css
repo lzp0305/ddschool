@@ -1,0 +1,114 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arror_down_gray {
+  background-image: url(../../sprite.png);
+  background-position: 0px -81px;
+  width: 12px;
+  height: 20px;
+}
+.icon-arror_right_gray {
+  background-image: url(../../sprite.png);
+  background-position: -93px -81px;
+  width: 16px;
+  height: 10px;
+}
+.icon-arror_right_red {
+  background-image: url(../../sprite.png);
+  background-position: -114px -15px;
+  width: 16px;
+  height: 10px;
+}
+.icon-arror_right_white {
+  background-image: url(../../sprite.png);
+  background-position: -114px 0px;
+  width: 16px;
+  height: 10px;
+}
+.icon-crumbs_home {
+  background-image: url(../../sprite.png);
+  background-position: -55px -81px;
+  width: 14px;
+  height: 14px;
+}
+.icon-crumbs_home_on {
+  background-image: url(../../sprite.png);
+  background-position: -36px -81px;
+  width: 14px;
+  height: 14px;
+}
+.icon-footer_weixin {
+  background-image: url(../../sprite.png);
+  background-position: -56px -25px;
+  width: 24px;
+  height: 24px;
+}
+.icon-footer_weixin_hover {
+  background-image: url(../../sprite.png);
+  background-position: -85px -25px;
+  width: 24px;
+  height: 24px;
+}
+.icon-header_search {
+  background-image: url(../../sprite.png);
+  background-position: -74px -81px;
+  width: 14px;
+  height: 14px;
+}
+.icon-header_search_on {
+  background-image: url(../../sprite.png);
+  background-position: -17px -81px;
+  width: 14px;
+  height: 14px;
+}
+.icon-news_list_down {
+  background-image: url(../../sprite.png);
+  background-position: 0px 0px;
+  width: 51px;
+  height: 51px;
+}
+.icon-share_qq {
+  background-image: url(../../sprite.png);
+  background-position: -75px -56px;
+  width: 20px;
+  height: 20px;
+}
+.icon-share_qzone {
+  background-image: url(../../sprite.png);
+  background-position: -50px -56px;
+  width: 20px;
+  height: 20px;
+}
+.icon-share_weibo {
+  background-image: url(../../sprite.png);
+  background-position: -25px -56px;
+  width: 20px;
+  height: 20px;
+}
+.icon-share_weixin {
+  background-image: url(../../sprite.png);
+  background-position: 0px -56px;
+  width: 20px;
+  height: 20px;
+}
+.icon-watermark {
+  background-image: url(../../sprite.png);
+  background-position: -56px 0px;
+  width: 53px;
+  height: 20px;
+}
